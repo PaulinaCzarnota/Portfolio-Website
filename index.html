@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Paulina Czarnota - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <!-- NAVIGATION BAR -->
     <nav id="desktop-nav">
       <div class="logo">Paulina Czarnota</div>
       <div>
@@ -20,22 +21,8 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Paulina Czarnota</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+
+    <!-- PROFILE SECTION -->
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/profile-pic.png" alt="Paulina Czarnota profile picture" />
@@ -43,7 +30,7 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Paulina Czarnota</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section__text__p2">Frontend Developer and Computer Science Student</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -71,8 +58,10 @@
         </div>
       </div>
     </section>
+
+    <!-- ABOUT SECTION -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
+      <p class="section__text__p1">Get To Know Me</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
@@ -100,16 +89,17 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>Second Year, Bachelor of Science (Honours) in Computer Science (TU856) at TU Dublin</p>
+              <p>Third Year, Computer Science BSc (Hons), TU Dublin</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Welcome! I am a dedicated and motivated individual with a strong passion for web development. Over the past few years, I have delved deep into various programming languages and technologies, refining my skills in HTML5, CSS, JavaScript, PHP, Python, Java and C.
+              As a dedicated Computer Science student at TU Dublin, I have built a strong foundation in web development, object-oriented programming, and software engineering. 
+              My academic experience has equipped me with a well-rounded skill set in both frontend and backend development. I am passionate about creating secure, robust systems and continuously refining my problem-solving abilities.
               <br /><br />
-              Throughout my academic journey at TU Dublin, I have actively engaged in diverse programming projects and coursework, gaining valuable experience in both frontend and backend development. I am adept at creating dynamic and responsive websites that not only meet the client's needs but also deliver an exceptional user experience.
+              Some key projects include developing a School Management System using Python, focusing on secure data management, and building a Library Management System that applied UML diagrams and SOIL for system modeling and testing.
               <br /><br />
-              Beyond coding, I am committed to continuous learning and self-improvement. I am always eager to explore new technologies and expand my knowledge base to stay abreast of industry trends and best practices.
+              I am committed to pursuing a career in web design or software development, constantly evolving my skills to meet the needs of the industry.
             </p>
           </div>
         </div>
@@ -121,8 +111,10 @@
         onclick="location.href='./#experience'"
       />
     </section>
+
+    <!-- EXPERIENCE SECTION -->
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
+      <p class="section__text__p1">My Skills and</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -137,7 +129,7 @@
                 />
                 <div>
                   <h3>HTML</h3>
-                  <p>Experienced</p>
+                  <p>Proficient</p>
                 </div>
               </article>
               <article>
@@ -148,7 +140,7 @@
                 />
                 <div>
                   <h3>CSS</h3>
-                  <p>Experienced</p>
+                  <p>Proficient</p>
                 </div>
               </article>
               <article>
@@ -159,13 +151,14 @@
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
             </div>
           </div>
+
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Backend & Tools</h2>
             <div class="article-container">
               <article>
                 <img
@@ -174,8 +167,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+                  <h3>Python</h3>
+                  <p>Proficient</p>
                 </div>
               </article>
               <article>
@@ -185,7 +178,18 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Node JS</h3>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -197,7 +201,7 @@
                 />
                 <div>
                   <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <p>Experienced</p>
                 </div>
               </article>
             </div>
@@ -211,8 +215,10 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
+    <!-- PROJECTS SECTION -->
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
+      <p class="section__text__p1">Explore My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -224,7 +230,10 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">School Management System</h2>
+            <p>
+              Developed a Python-based School Management System with a focus on secure data storage and user authentication. This project required an understanding of object-oriented principles and efficient data handling techniques.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -240,6 +249,7 @@
               </button>
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -248,31 +258,10 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Library Management System</h2>
+            <p>
+              Built a UML-based Library Management System, designed to streamline book tracking and secure user authentication. Utilized SOIL and rigorous testing methodologies to ensure stability.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -297,41 +286,37 @@
         onclick="location.href='./#contact'"
       />
     </section>
+
+    <!-- CONTACT SECTION -->
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">paul.czar.14@gmail.com</a></p>
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact</h1>
+      <form action="submit.php" class="form-container">
+        <div class="form-control">
+          <input type="text" name="name" id="name" placeholder="Your Name" />
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        <div class="form-control">
+          <input type="email" name="email" id="email" placeholder="Your Email" />
         </div>
-      </div>
+        <div class="form-control">
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <button class="btn btn-color-1" type="submit">Send Message</button>
+      </form>
     </section>
+
+    <!-- FOOTER -->
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Paulina Czarnota. All Rights Reserved.</p>
+      <div>
+        <h2>Paulina Czarnota</h2>
+        <p>Frontend Developer and Computer Science Student</p>
+      </div>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
