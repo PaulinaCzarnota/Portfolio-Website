@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paulina Czarnota - Portfolio</title>
+    <title>Paulina Czarnota | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -22,6 +22,23 @@
       </div>
     </nav>
 
+    <nav id="hamburger-nav">
+      <div class="logo">Paulina Czarnota</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
     <!-- PROFILE SECTION -->
     <section id="profile">
       <div class="section__pic-container">
@@ -30,7 +47,7 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Paulina Czarnota</h1>
-        <p class="section__text__p2">Frontend Developer and Computer Science Student</p>
+        <p class="section__text__p2">Frontend Developer & Computer Science Student</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -67,7 +84,7 @@
         <div class="section__pic-container">
           <img
             src="./assets/about-pic.png"
-            alt="Profile picture"
+            alt="Paulina Czarnota"
             class="about-pic"
           />
         </div>
@@ -89,17 +106,24 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>Third Year, Computer Science BSc (Hons), TU Dublin</p>
+              <p>Third Year, Bachelor of Science (Honours) in Computer Science (TU856) at TU Dublin</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              As a dedicated Computer Science student at TU Dublin, I have built a strong foundation in web development, object-oriented programming, and software engineering. 
-              My academic experience has equipped me with a well-rounded skill set in both frontend and backend development. I am passionate about creating secure, robust systems and continuously refining my problem-solving abilities.
-              <br /><br />
-              Some key projects include developing a School Management System using Python, focusing on secure data management, and building a Library Management System that applied UML diagrams and SOIL for system modeling and testing.
-              <br /><br />
-              I am committed to pursuing a career in web design or software development, constantly evolving my skills to meet the needs of the industry.
+              I am a passionate third-year Computer Science student at TU Dublin, specializing in web development, software engineering, and IT operations. My academic journey has equipped me with a diverse skill set and a strong foundation in computer science principles.
+            </p>
+            <p>
+              Throughout my studies, I have developed expertise in HTML5, CSS3, JavaScript, PHP, Python, C, Java, Bash, and SQL. I have practical experience with development environments such as Visual Studio Code and PyCharm, and I am proficient in database management systems including MySQL and Oracle. Additionally, I have a solid understanding of version control using Git and GitHub.
+            </p>
+            <p>
+              My key projects include developing a School Management System using Python, which emphasized secure data management practices, and a Library Management System that utilized UML diagrams and SOIL for system modeling and testing. These projects have honed my skills in object-oriented programming, algorithm design, and problem-solving.
+            </p>
+            <p>
+              I hold several certifications, including Advanced File and Folder Management using PowerShell and Mastering Cybersecurity Vulnerability Management. These certifications have enhanced my abilities in scripting, cross-platform management, vulnerability assessment, and cybersecurity compliance.
+            </p>
+            <p>
+              I am committed to continuous learning and applying my skills to real-world projects. My career aspiration is to pursue a role in Web Design or Software Development, where I can leverage my technical skills and creative mindset to contribute to impactful projects and further my professional growth.
             </p>
           </div>
         </div>
@@ -124,34 +148,45 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="HTML icon"
                   class="icon"
                 />
                 <div>
-                  <h3>HTML</h3>
+                  <h3>HTML5</h3>
                   <p>Proficient</p>
                 </div>
               </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="CSS icon"
                   class="icon"
                 />
                 <div>
-                  <h3>CSS</h3>
+                  <h3>CSS3</h3>
                   <p>Proficient</p>
                 </div>
               </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="JavaScript icon"
                   class="icon"
                 />
                 <div>
                   <h3>JavaScript</h3>
                   <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="WordPress icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>WordPress</h3>
+                  <p>Proficient</p>
                 </div>
               </article>
             </div>
@@ -163,7 +198,18 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="PHP icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Python icon"
                   class="icon"
                 />
                 <div>
@@ -174,7 +220,7 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="C icon"
                   class="icon"
                 />
                 <div>
@@ -185,7 +231,18 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Java icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="SQL icon"
                   class="icon"
                 />
                 <div>
@@ -196,12 +253,23 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Git icon"
                   class="icon"
                 />
                 <div>
                   <h3>Git</h3>
                   <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="PhpMyAdmin icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PhpMyAdmin</h3>
+                  <p>Proficient</p>
                 </div>
               </article>
             </div>
@@ -226,24 +294,24 @@
             <div class="article-container">
               <img
                 src="./assets/project-1.png"
-                alt="Project 1"
+                alt="Library Management System"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">School Management System</h2>
+            <h2 class="experience-sub-title project-title">Library Management System</h2>
             <p>
-              Developed a Python-based School Management System with a focus on secure data storage and user authentication. This project required an understanding of object-oriented principles and efficient data handling techniques.
+              Developed a full-stack Library Management System using HTML5, CSS3, JavaScript, PHP, and MySQL. The system enables librarians to manage book inventories, track user borrowings, and handle returns efficiently. Implemented secure user authentication and robust data models to ensure data integrity.
             </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/PaulinaCzarnota/Library-Management-System'"
               >
-                Github
+                GitHub
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://library-management-demo.com/'"
               >
                 Live Demo
               </button>
@@ -254,24 +322,80 @@
             <div class="article-container">
               <img
                 src="./assets/project-2.png"
-                alt="Project 2"
+                alt="School Management System"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Library Management System</h2>
+            <h2 class="experience-sub-title project-title">School Management System</h2>
             <p>
-              Built a UML-based Library Management System, designed to streamline book tracking and secure user authentication. Utilized SOIL and rigorous testing methodologies to ensure stability.
+              Created a dynamic School Management System using Python, focusing on secure data storage and user authentication. This project involved object-oriented programming principles and efficient data handling techniques to manage student records, attendance, and grading.
             </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/PaulinaCzarnota/School-Management-System'"
               >
-                Github
+                GitHub
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://school-management-demo.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Personal Portfolio Website"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Personal Portfolio Website</h2>
+            <p>
+              Designed and developed this responsive portfolio website using HTML5, CSS3, and JavaScript. The website showcases my projects, skills, and experience with a modern layout and clean design, ensuring accessibility and seamless performance across all devices.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PaulinaCzarnota/Personal-Portfolio'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://paulinczarnota.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.png"
+                alt="Employee Certification Management System"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Employee Certification Management System</h2>
+            <p>
+              Developed a system for managing employee certifications using C, incorporating merge sort for efficient data organization. This project enhanced my understanding of algorithm efficiency and system performance, crucial for developing high-quality software.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PaulinaCzarnota/Employee-Certification-Management'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://employee-certification-demo.com/'"
               >
                 Live Demo
               </button>
@@ -290,21 +414,51 @@
     <!-- CONTACT SECTION -->
     <section id="contact">
       <p class="section__text__p1">Get In Touch</p>
-      <h1 class="title">Contact</h1>
-      <form action="submit.php" class="form-container">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:paul.czar.14@gmail.com">paul.czar.14@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/paulina-czarnota-computer-science/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="Github icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/PaulinaCzarnota">GitHub</a></p>
+        </div>
+      </div>
+      <form action="submit.php" method="POST" class="form-container">
         <div class="form-control">
-          <input type="text" name="name" id="name" placeholder="Your Name" />
+          <label for="name">Your Name</label>
+          <input type="text" name="name" id="name" placeholder="Your Name" required />
         </div>
         <div class="form-control">
-          <input type="email" name="email" id="email" placeholder="Your Email" />
+          <label for="email">Your Email</label>
+          <input type="email" name="email" id="email" placeholder="Your Email" required />
         </div>
         <div class="form-control">
+          <label for="message">Your Message</label>
           <textarea
             name="message"
             id="message"
             cols="30"
             rows="10"
             placeholder="Your Message"
+            required
           ></textarea>
         </div>
         <button class="btn btn-color-1" type="submit">Send Message</button>
@@ -313,10 +467,22 @@
 
     <!-- FOOTER -->
     <footer>
-      <div>
-        <h2>Paulina Czarnota</h2>
-        <p>Frontend Developer and Computer Science Student</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-content">
+        <p>© 2024 Paulina Czarnota. All Rights Reserved.</p>
+        <p>Frontend Developer & Computer Science Student at TU Dublin</p>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
