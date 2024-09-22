@@ -1,3 +1,5 @@
--- IN PROGRESS --
+**Welcome to My Portfolio!**
 
-https://paulinaczarnota.github.io/Portfolio-Website/
+You can visit my portfolio website here: https://paulinaczarnota.github.io/Portfolio-Website/
+
+Feel free to explore my projects, discover my background, and connect with me!
