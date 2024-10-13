@@ -48,7 +48,7 @@
                 <button class="btn btn-color-2" onclick="window.open('./assets/CV_Paulina_Czarnota.pdf')">
                     Download CV
                 </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
                     Contact Info
                 </button>
             </div>
@@ -82,11 +82,11 @@
                     </p>
                     <br>
                     <p>
-                        During my coursework, I've gained proficiency in programming languages such as HTML5, CSS3, JavaScript, PHP, Python, C, Java, Bash, and SQL. I have hands-on experience with various development tools, including Visual Studio Code and PyCharm, and I'm adept in using database systems like MySQL and Oracle. Furthermore, I possess a strong grasp of version control systems, particularly Git and GitHub.
+                        During my coursework, I've gained proficiency in programming languages such as HTML5, CSS3, JavaScript, Node.js, Kotlin, XML, PHP, Python, C, Java, Bash, and SQL. I have hands-on experience with various development tools, including Visual Studio Code and PyCharm, and I'm adept in using database systems like MySQL, PHPMyAdmin on XAMPP, MongoDB, and Oracle. Furthermore, I possess a strong grasp of version control systems, particularly Git and GitHub.
                     </p>
                     <br>
                     <p>
-                        I have earned multiple certifications, such as Advanced File and Folder Management with PowerShell and Mastering Cybersecurity Vulnerability Management. These qualifications have sharpened my skills in scripting, managing cross-platform environments, assessing vulnerabilities, and ensuring compliance in cybersecurity.
+                        I have earned multiple certifications, such as The Web Developer Bootcamp 2024, Advanced File and Folder Management with PowerShell, and Mastering Cybersecurity Vulnerability Management. These qualifications have sharpened my skills in web and app design and development, scripting, managing cross-platform environments, assessing vulnerabilities, and ensuring compliance in cybersecurity.
                     </p>
                     <br>
                     <p>
@@ -95,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
     </section>
 
     <section id="experience">
@@ -128,6 +128,13 @@
                             </div>
                         </article>
                         <article>
+                            <img src="./assets/checkmark.png" alt="Kotlin icon" class="icon" />
+                            <div>
+                                <h3>Kotlin</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
                             <img src="./assets/checkmark.png" alt="WordPress icon" class="icon" />
                             <div>
                                 <h3>WordPress</h3>
@@ -144,6 +151,13 @@
                             <img src="./assets/checkmark.png" alt="PHP icon" class="icon" />
                             <div>
                                 <h3>PHP</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Node.js icon" class="icon" />
+                            <div>
+                                <h3>Node.js</h3>
                                 <p>Proficient</p>
                             </div>
                         </article>
@@ -183,17 +197,17 @@
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="PhpMyAdmin icon" class="icon" />
+                            <img src="./assets/checkmark.png" alt="GitHub icon" class="icon" />
                             <div>
-                                <h3>PhpMyAdmin</h3>
-                                <p>Proficient</p>
+                                <h3>GitHub</h3>
+                                <p>Experienced</p>
                             </div>
                         </article>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
     </section>
 
     <section id="projects">
@@ -236,33 +250,27 @@
     </section>
 
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
+        <p class="section__text__p1">Get In Touch</p>
         <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:paul.czar.14@gmail.com">paul.czar.14@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="//www.linkedin.com/in/paulina-czarnota-computer-science/">LinkedIn</a></p>
-            </div>
+        <div class="contact-details">
+            <p>Feel free to reach out to me via email or connect with me on LinkedIn:</p>
+            <p>Email: <a href="mailto:paulina.czarnota@example.com">paulina.czarnota@example.com</a></p>
+            <p>
+                LinkedIn: <a href="https://www.linkedin.com/in/paulina-czarnota-computer-science/">Paulina Czarnota</a>
+            </p>
         </div>
+        <button class="btn btn-color-1" onclick="location.href='#profile'">Back to Top</button>
     </section>
 
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>© 2024 Paulina Czarnota. All Rights Reserved.</p>
+        <p>&copy; 2024 Paulina Czarnota. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script>
+        function toggleMenu() {
+            const menuLinks = document.querySelector('.menu-links');
+            menuLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
