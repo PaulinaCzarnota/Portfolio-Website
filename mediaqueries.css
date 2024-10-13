@@ -4,100 +4,100 @@
     margin-bottom: 6rem;
   }
   .about-containers {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* This helps the containers to wrap on smaller screens */
   }
   #contact,
   #projects {
-    height: fit-content;
+    height: fit-content; /* Ensures these sections expand to fit content */
   }
 }
 
 @media screen and (max-width: 1200px) {
   #desktop-nav {
-    display: none;
+    display: none; /* Hides desktop navigation on smaller screens */
   }
   #hamburger-nav {
-    display: flex;
+    display: flex; /* Shows hamburger navigation */
   }
   #experience,
   .experience-details-container {
-    margin-top: 2rem;
+    margin-top: 2rem; /* Adds spacing above experience section */
   }
   #profile,
   .section-container {
-    display: block;
+    display: block; /* Switches layout to block for smaller screens */
   }
   .arrow {
-    display: none;
+    display: none; /* Hides arrow icon */
   }
   section,
   .section-container {
-    height: fit-content;
+    height: fit-content; /* Makes sections fit their content */
   }
   section {
-    margin: 0 5%;
+    margin: 0 5%; /* Adjusts margin for sections */
   }
   .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+    width: 275px; /* Sets a fixed width for profile images */
+    height: 275px; /* Sets a fixed height for profile images */
+    margin: 0 auto 2rem; /* Centers image with margin */
   }
   .about-containers {
-    margin-top: 0;
+    margin-top: 0; /* Resets top margin for about containers */
   }
 }
 
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: 40vh; /* Sets a specific height for contact and footer */
   }
   #profile {
-    height: 83vh;
-    margin-bottom: 0;
+    height: 83vh; /* Maintains profile height */
+    margin-bottom: 0; /* Resets margin below profile */
   }
   article {
-    font-size: 1rem;
+    font-size: 1rem; /* Sets font size for articles */
   }
   footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+    height: fit-content; /* Makes footer navigation fit its content */
+    margin-bottom: 2rem; /* Adds margin below footer nav */
   }
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Ensures these containers wrap properly */
   }
   .contact-info-container {
-    margin: 0;
+    margin: 0; /* Resets margin for contact info */
   }
   .contact-info-container p,
   .nav-links li a {
-    font-size: 1rem;
+    font-size: 1rem; /* Sets a consistent font size for contact info and nav links */
   }
   .experience-sub-title {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Adjusts font size for experience subtitles */
   }
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Reduces logo font size for mobile */
   }
   .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+    flex-direction: column; /* Changes nav links to column layout */
+    gap: 0.5rem; /* Adds gap between nav links */
+    text-align: center; /* Centers nav link text */
   }
   .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
+    width: auto; /* Sets width to auto for flexibility */
+    height: 46vw; /* Sets a responsive height for images */
+    justify-content: center; /* Centers image */
   }
   .section__text__p2 {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Adjusts font size for section text */
   }
   .title {
-    font-size: 2rem;
+    font-size: 2rem; /* Sets title font size for mobile */
   }
   .text-container {
-    text-align: justify;
+    text-align: justify; /* Justifies text in text container */
   }
 }
