@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paulina Czarnota - Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
-    <!-- Desktop Navigation -->
     <nav id="desktop-nav">
-        <div class="logo">Paulina Czarnota's Portfolio</div>
+        <div class="logo">Portfolio</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -19,9 +19,8 @@
         </ul>
     </nav>
 
-    <!-- Mobile Navigation -->
     <nav id="hamburger-nav">
-        <div class="logo">Portfolio</div>
+        <div class="logo">Paulina Czarnota</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -37,7 +36,6 @@
         </div>
     </nav>
 
-    <!-- Profile Section -->
     <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/profile-picture.png" alt="Paulina Czarnota profile picture" />
@@ -55,13 +53,12 @@
                 </button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/paulina-czarnota-computer-science/'" />
-                <img src="./assets/github.png" alt="GitHub profile" class="icon" onclick="location.href='https://github.com/PaulinaCzarnota'" />
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/paulina-czarnota-computer-science/'" />
+                <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/PaulinaCzarnota'" />
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
@@ -83,11 +80,17 @@
                     <p>
                         As a dedicated third-year Computer Science student at TU Dublin, I specialize in web design, software development, and IT infrastructure. My education has equipped me with a versatile skill set and a strong foundation in the fundamentals of computer science.
                     </p>
+                    <br>
                     <p>
-                        I am proficient in programming languages like HTML5, CSS3, JavaScript, Node.js, PHP, Python, Java, and SQL. I also have hands-on experience with Visual Studio Code, MySQL, and GitHub.
+                        Through my coursework, I have developed proficiency in several programming languages, including HTML5, CSS3, JavaScript, Node.js, Kotlin, XML, PHP, Python, C, Java, Bash, and SQL. I have hands-on experience with various development tools, such as Visual Studio Code and PyCharm, and I am skilled in using database systems like MySQL, PHPMyAdmin on XAMPP, MongoDB, and Oracle. Additionally, I have a solid understanding of version control systems, particularly Git and GitHub.
                     </p>
+                    <br>
                     <p>
-                        I'm passionate about applying my knowledge to real-world projects and aspire to a career in web design or software development.
+                        I have earned several certifications, including The Web Developer Bootcamp 2024, Advanced File and Folder Management with PowerShell, and Mastering Cybersecurity Vulnerability Management. These qualifications have significantly improved my expertise in web and app design, scripting, managing cross-platform environments, vulnerability assessment, and cybersecurity compliance, among other areas.
+                    </p>
+                    <br>
+                    <p>
+                        I am passionate about continuous learning and applying my knowledge to practical projects. My career goal is to pursue a position in Web Design or Software Development, where I can leverage my technical abilities and innovative thinking to make meaningful contributions and advance my career.
                     </p>
                 </div>
             </div>
@@ -95,7 +98,6 @@
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
     </section>
 
-    <!-- Experience Section -->
     <section id="experience">
         <p class="section__text__p1">My Skills and</p>
         <h1 class="title">Experience</h1>
@@ -125,11 +127,33 @@
                                 <p>Proficient</p>
                             </div>
                         </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Kotlin icon" class="icon" />
+                            <div>
+                                <h3>Kotlin</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="WordPress icon" class="icon" />
+                            <div>
+                                <h3>WordPress</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
+    
                 <div class="details-container">
                     <h2 class="experience-sub-title">Backend & Tools</h2>
                     <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="PHP icon" class="icon" />
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Node.js icon" class="icon" />
                             <div>
@@ -145,10 +169,38 @@
                             </div>
                         </article>
                         <article>
+                            <img src="./assets/checkmark.png" alt="C icon" class="icon" />
+                            <div>
+                                <h3>C</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Java icon" class="icon" />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
                             <img src="./assets/checkmark.png" alt="SQL icon" class="icon" />
                             <div>
                                 <h3>SQL</h3>
                                 <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Git icon" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="GitHub icon" class="icon" />
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>Experienced</p>
                             </div>
                         </article>
                     </div>
@@ -157,64 +209,77 @@
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
     </section>
-
-    <!-- Projects Section -->
+    
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container color-container">
-                    <h2>School Management System</h2>
-                    <p>
-                        A Python-based application to manage student data, calculate grades, and generate reports, emphasizing OOP principles.
-                    </p>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Object-Oriented-Programming-In-Python-Project-2023'">
-                        GitHub
-                    </button>
+                    <div class="article-container">
+                        <h2>Project 1: School Management System</h2>
+                        <p>
+                            This Python-based application is designed to manage various aspects of a school, including storing student information, computing final grades, and generating detailed student reports. Developed using object-oriented programming (OOP) principles, the system offers CRUD operations for student data while ensuring data persistence through external files. This project enhances skills in secure data management and modular software design.
+                        </p>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Object-Oriented-Programming-In-Python-Project-2023'">
+                            GitHub
+                        </button>
+                    </div>
                 </div>
 
                 <div class="details-container color-container">
-                    <h2>Algorithms & Data Structures</h2>
-                    <p>
-                        Implemented graph algorithms in Java, including Kruskal's Algorithm and graph traversal techniques (DFS & BFS).
-                    </p>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Algorithms-and-Data-Structures-CA-Assignment-2022-23'">
-                        GitHub
-                    </button>
+                    <div class="article-container">
+                        <h2>Project 2: Algorithms & Data Structures</h2>
+                        <p>
+                            This project focuses on implementing graph algorithms, including Kruskal's Algorithm for finding the Minimum Spanning Tree (MST) and various graph traversal methods like Depth First Search (DFS) and Breadth First Search (BFS). The algorithms are coded in Java and utilize a Union-Find data structure for efficient cycle detection. This project showcases the application of algorithms in solving complex problems and provides a deeper understanding of data structures in computer science.
+                        </p>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Algorithms-and-Data-Structures-CA-Assignment-2022-23'">
+                            GitHub
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <p class="section__text__p1">Get In Touch</p>
         <h1 class="title">Contact Me</h1>
-        <div class="experience-details-container">
-            <div class="text-container">
-                <p>
-                    I'm currently open to new opportunities! Feel free to reach out if you want to collaborate on a project, or have any questions.
-                </p>
-                <p>Email me at: <strong>paulina.czarnota@example.com</strong></p>
+        <div class="contact-details">
+            <p class="section__text__p1">Feel free to reach out to me via email or connect with me on LinkedIn:</p>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                    <p><a href="mailto:paul.czar.14@gmail.com">paul.czar.14@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                    <p><a href="https://www.linkedin.com/in/paulina-czarnota-computer-science/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
+    
     <footer>
         <nav>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
         <p>© 2024 Paulina Czarnota. All Rights Reserved.</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
