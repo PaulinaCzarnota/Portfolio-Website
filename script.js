@@ -1,4 +1,4 @@
 function toggleMenu() {
-  const menu = document.querySelector('.hamburger-menu');
-  menu.classList.toggle('open');
+  const hamburgerNav = document.getElementById('hamburger-nav');
+  hamburgerNav.classList.toggle('active');
 }

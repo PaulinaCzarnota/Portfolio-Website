@@ -23,8 +23,8 @@
     <!-- Hamburger Navigation (Mobile) -->
     <nav id="hamburger-nav">
         <div class="logo">Portfolio</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="hamburger-icon">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -40,22 +40,22 @@
 
     <!-- Profile Section -->
     <section id="profile">
-        <div class="section__pic-container">
+        <div class="profile-pic-container">
             <img src="./assets/profile-picture.png" alt="Paulina Czarnota profile picture" />
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Paulina Czarnota</h1>
-            <p class="section__text__p2">Computer Science Student</p>
+        <div class="profile-text">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="name">Paulina Czarnota</h1>
+            <p class="role">Computer Science Student</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/CV_Paulina_Czarnota.pdf')">
+                <button class="btn btn-download" onclick="window.open('./assets/CV_Paulina_Czarnota.pdf')">
                     Download CV
                 </button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                <button class="btn btn-contact" onclick="location.href='#contact'">
                     Contact Info
                 </button>
             </div>
-            <div id="socials-container">
+            <div class="socials-container">
                 <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/paulina-czarnota-computer-science/'" />
                 <img src="./assets/github.png" alt="GitHub profile" class="icon" onclick="location.href='https://github.com/PaulinaCzarnota'" />
             </div>
@@ -64,33 +64,31 @@
 
     <!-- About Section -->
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-                        <h3>Experience</h3>
-                        <p>4+ years <br />Academic Experience</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>3rd Year in B.Sc. Degree Program</p>
-                    </div>
+        <p class="section-header">Get To Know More</p>
+        <h1 class="section-title">About Me</h1>
+        <div class="about-container">
+            <div class="about-details">
+                <div class="about-info">
+                    <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                    <h3>Experience</h3>
+                    <p>4+ years <br />Academic Experience</p>
                 </div>
-                <div class="text-container">
-                    <p>
-                        I am a third-year Computer Science student at TU Dublin specializing in web design, software development, and IT infrastructure. 
-                    </p>
-                    <p>
-                        My experience includes HTML5, CSS3, JavaScript, Node.js, Kotlin, XML, PHP, Python, C, Java, Bash, and SQL. I am proficient with tools like Visual Studio Code and PyCharm, and have hands-on experience with MySQL, MongoDB, and GitHub.
-                    </p>
-                    <p>
-                        I have certifications in The Web Developer Bootcamp 2024, PowerShell, and Cybersecurity Vulnerability Management. I aim to pursue a career in Web Design or Software Development.
-                    </p>
+                <div class="about-info">
+                    <img src="./assets/education.png" alt="Education icon" class="icon" />
+                    <h3>Education</h3>
+                    <p>3rd Year in B.Sc. Degree Program</p>
                 </div>
+            </div>
+            <div class="about-text">
+                <p>
+                    I am a third-year Computer Science student at TU Dublin specializing in web design, software development, and IT infrastructure.
+                </p>
+                <p>
+                    My experience includes HTML5, CSS3, JavaScript, Node.js, Kotlin, XML, PHP, Python, C, Java, Bash, and SQL. I am proficient with tools like Visual Studio Code and PyCharm, and have hands-on experience with MySQL, MongoDB, and GitHub.
+                </p>
+                <p>
+                    I have certifications in The Web Developer Bootcamp 2024, PowerShell, and Cybersecurity Vulnerability Management. I aim to pursue a career in Web Design or Software Development.
+                </p>
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
@@ -98,110 +96,108 @@
 
     <!-- Experience Section -->
     <section id="experience">
-        <p class="section__text__p1">My Skills and</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="HTML5 icon" class="icon" />
-                            <div>
-                                <h3>HTML5</h3>
-                                <p>Proficient</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="CSS3 icon" class="icon" />
-                            <div>
-                                <h3>CSS3</h3>
-                                <p>Proficient</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="JavaScript icon" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Proficient</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Kotlin icon" class="icon" />
-                            <div>
-                                <h3>Kotlin</h3>
-                                <p>Proficient</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="WordPress icon" class="icon" />
-                            <div>
-                                <h3>WordPress</h3>
-                                <p>Proficient</p>
-                            </div>
-                        </article>
+        <p class="section-header">My Skills and</p>
+        <h1 class="section-title">Experience</h1>
+        <div class="experience-container">
+            <div class="experience-section">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <img src="./assets/checkmark.png" alt="HTML5 icon" class="icon" />
+                        <div>
+                            <h3>HTML5</h3>
+                            <p>Proficient</p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./assets/checkmark.png" alt="CSS3 icon" class="icon" />
+                        <div>
+                            <h3>CSS3</h3>
+                            <p>Proficient</p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./assets/checkmark.png" alt="JavaScript icon" class="icon" />
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Proficient</p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./assets/checkmark.png" alt="Kotlin icon" class="icon" />
+                        <div>
+                            <h3>Kotlin</h3>
+                            <p>Proficient</p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./assets/checkmark.png" alt="WordPress icon" class="icon" />
+                        <div>
+                            <h3>WordPress</h3>
+                            <p>Proficient</p>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend & Tools</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="PHP icon" class="icon" />
-                            <div>
-                                <h3>PHP</h3>
-                                <p>Proficient</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Node.js icon" class="icon" />
-                            <div>
-                                <h3>Node.js</h3>
-                                <p>Proficient</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Python icon" class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Proficient</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="C icon" class="icon" />
-                            <div>
-                                <h3>C</h3>
-                                <p>Proficient</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Java icon" class="icon" />
-                            <div>
-                                <h3>Java</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="SQL icon" class="icon" />
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Proficient</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Git icon" class="icon" />
-                            <div>
-                                <h3>Git</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="GitHub icon" class="icon" />
-                            <div>
-                                <h3>GitHub</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
+            <div class="experience-section">
+                <h2 class="experience-sub-title">Backend & Tools</h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <img src="./assets/checkmark.png" alt="PHP icon" class="icon" />
+                        <div>
+                            <h3>PHP</h3>
+                            <p>Proficient</p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./assets/checkmark.png" alt="Node.js icon" class="icon" />
+                        <div>
+                            <h3>Node.js</h3>
+                            <p>Proficient</p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./assets/checkmark.png" alt="Python icon" class="icon" />
+                        <div>
+                            <h3>Python</h3>
+                            <p>Proficient</p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./assets/checkmark.png" alt="C icon" class="icon" />
+                        <div>
+                            <h3>C</h3>
+                            <p>Proficient</p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./assets/checkmark.png" alt="Java icon" class="icon" />
+                        <div>
+                            <h3>Java</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./assets/checkmark.png" alt="SQL icon" class="icon" />
+                        <div>
+                            <h3>SQL</h3>
+                            <p>Proficient</p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./assets/checkmark.png" alt="Git icon" class="icon" />
+                        <div>
+                            <h3>Git</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./assets/checkmark.png" alt="GitHub icon" class="icon" />
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>Experienced</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -265,18 +261,8 @@
             </div>
         </div>
     </section>
-    
+
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
         <p>© 2024 Paulina Czarnota. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
