@@ -1,4 +1,9 @@
 function toggleMenu() {
-  const hamburgerNav = document.getElementById('hamburger-nav');
-  hamburgerNav.classList.toggle('active');
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  
+  if (menu && icon) {  // Check if elements exist
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+  }
 }
