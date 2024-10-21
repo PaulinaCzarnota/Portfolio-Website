@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paulina Czarnota - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Paulina Czarnota's Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">Portfolio</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-picture.png" alt="Paulina Czarnota profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Paulina Czarnota</h1>
+            <p class="section__text__p2">Computer Science Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV_Paulina_Czarnota.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/paulina-czarnota-computer-science/'" />
+                <img src="./assets/github.png" alt="GitHub profile" class="icon" onclick="location.href='https://github.com/PaulinaCzarnota'" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>4+ years <br />Academic Experience</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>3rd Year in B.Sc. Degree Program</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        As a dedicated third-year Computer Science student at TU Dublin, I specialize in web design, software development, and IT infrastructure. My education has equipped me with a versatile skill set and a strong foundation in the fundamentals of computer science.
+                    </p>
+                    <p>
+                        I am proficient in programming languages like HTML5, CSS3, JavaScript, Node.js, PHP, Python, Java, and SQL. I also have hands-on experience with Visual Studio Code, MySQL, and GitHub.
+                    </p>
+                    <p>
+                        I'm passionate about applying my knowledge to real-world projects and aspire to a career in web design or software development.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <p class="section__text__p1">My Skills and</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="HTML5 icon" class="icon" />
+                            <div>
+                                <h3>HTML5</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="CSS3 icon" class="icon" />
+                            <div>
+                                <h3>CSS3</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="JavaScript icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend & Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Node.js icon" class="icon" />
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Python icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="SQL icon" class="icon" />
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <h2>School Management System</h2>
+                    <p>
+                        A Python-based application to manage student data, calculate grades, and generate reports, emphasizing OOP principles.
+                    </p>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Object-Oriented-Programming-In-Python-Project-2023'">
+                        GitHub
+                    </button>
+                </div>
+
+                <div class="details-container color-container">
+                    <h2>Algorithms & Data Structures</h2>
+                    <p>
+                        Implemented graph algorithms in Java, including Kruskal's Algorithm and graph traversal techniques (DFS & BFS).
+                    </p>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Algorithms-and-Data-Structures-CA-Assignment-2022-23'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="experience-details-container">
+            <div class="text-container">
+                <p>
+                    I'm currently open to new opportunities! Feel free to reach out if you want to collaborate on a project, or have any questions.
+                </p>
+                <p>Email me at: <strong>paulina.czarnota@example.com</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p>© 2024 Paulina Czarnota. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
