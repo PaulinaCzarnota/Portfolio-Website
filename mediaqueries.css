@@ -3,101 +3,144 @@
     height: 83vh;
     margin-bottom: 6rem;
   }
+
   .about-containers {
-    flex-wrap: wrap; /* This helps the containers to wrap on smaller screens */
+    flex-wrap: wrap;
   }
+
   #contact,
-  #projects {
-    height: fit-content; /* Ensures these sections expand to fit content */
+  #projects,
+  #certifications {
+    height: fit-content;
   }
 }
 
 @media screen and (max-width: 1200px) {
   #desktop-nav {
-    display: none; /* Hides desktop navigation on smaller screens */
+    display: none;
   }
+
   #hamburger-nav {
-    display: flex; /* Shows hamburger navigation */
+    display: flex;
   }
+
   #experience,
   .experience-details-container {
-    margin-top: 2rem; /* Adds spacing above experience section */
+    margin-top: 2rem;
   }
+
   #profile,
   .section-container {
-    display: block; /* Switches layout to block for smaller screens */
+    display: block;
   }
+
   .arrow {
-    display: none; /* Hides arrow icon */
+    display: none;
   }
+
   section,
   .section-container {
-    height: fit-content; /* Makes sections fit their content */
+    height: fit-content;
   }
+
   section {
-    margin: 0 5%; /* Adjusts margin for sections */
+    margin: 0 5%;
   }
+
   .section__pic-container {
-    width: 275px; /* Sets a fixed width for profile images */
-    height: 275px; /* Sets a fixed height for profile images */
-    margin: 0 auto 2rem; /* Centers image with margin */
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
   }
+
   .about-containers {
-    margin-top: 0; /* Resets top margin for about containers */
+    margin-top: 0;
+  }
+
+  .certs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #certifications .details-container {
+    width: 90%;
+    margin-bottom: 1.5rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh; /* Sets a specific height for contact and footer */
+    height: fit-content;
   }
+
   #profile {
-    height: 83vh; /* Maintains profile height */
-    margin-bottom: 0; /* Resets margin below profile */
+    height: 83vh;
+    margin-bottom: 0;
   }
+
   article {
-    font-size: 1rem; /* Sets font size for articles */
+    font-size: 1rem;
   }
+
   footer nav {
-    height: fit-content; /* Makes footer navigation fit its content */
-    margin-bottom: 2rem; /* Adds margin below footer nav */
+    height: fit-content;
+    margin-bottom: 2rem;
   }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
-    flex-wrap: wrap; /* Ensures these containers wrap properly */
+    flex-wrap: wrap;
   }
+
   .contact-info-container {
-    margin: 0; /* Resets margin for contact info */
+    margin: 0;
   }
+
   .contact-info-container p,
   .nav-links li a {
-    font-size: 1rem; /* Sets a consistent font size for contact info and nav links */
+    font-size: 1rem;
   }
+
   .experience-sub-title {
-    font-size: 1.25rem; /* Adjusts font size for experience subtitles */
+    font-size: 1.25rem;
   }
+
   .logo {
-    font-size: 1.5rem; /* Reduces logo font size for mobile */
+    font-size: 1.5rem;
   }
+
   .nav-links {
-    flex-direction: column; /* Changes nav links to column layout */
-    gap: 0.5rem; /* Adds gap between nav links */
-    text-align: center; /* Centers nav link text */
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
   }
+
   .section__pic-container {
-    width: auto; /* Sets width to auto for flexibility */
-    height: 46vw; /* Sets a responsive height for images */
-    justify-content: center; /* Centers image */
+    width: auto;
+    height: 46vw;
+    justify-content: center;
   }
+
   .section__text__p2 {
-    font-size: 1.25rem; /* Adjusts font size for section text */
+    font-size: 1.25rem;
   }
+
   .title {
-    font-size: 2rem; /* Sets title font size for mobile */
+    font-size: 2rem;
   }
+
   .text-container {
-    text-align: justify; /* Justifies text in text container */
+    text-align: justify;
+  }
+
+  .certs-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #certifications .details-container {
+    width: 90%;
   }
 }
