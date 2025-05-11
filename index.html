@@ -1,237 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - Paulina Czarnota</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="desktop-nav">
-        <div class="logo">Portfolio</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <nav id="hamburger-nav">
-        <div class="logo">Portfolio</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!-- Navigation -->
+ <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Portfolio</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+ </nav>
 
-    <!-- Profile -->
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-picture.png" alt="Paulina Czarnota profile picture" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Paulina Czarnota</h1>
-            <p class="section__text__p2">Computer Science Student</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/CV_Paulina_Czarnota.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/paulina-czarnota-computer-science/'" />
-                <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/PaulinaCzarnota'" />
-            </div>
-        </div>
-    </section>
+  <!-- Profile -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-picture.png" alt="Paulina Czarnota profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Paulina Czarnota</h1>
+      <p class="section__text__p2">Aspiring Web & App Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/CV_Paulina_Czarnota.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/PaulinaCzarnota'" />
+      </div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-                        <h3>Experience</h3>
-                        <p>4+ years<br />Academic Experience</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>3rd Year in B.Sc. Degree Program</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>I specialize in web design, software development, and IT infrastructure. I have developed proficiency in HTML5, CSS3, JavaScript, Node.js, Kotlin, PHP, Python, C, Java, Bash, and SQL. I work with tools like VS Code and PyCharm, and databases such as MySQL, MongoDB, and Oracle.</p>
-                    <p>I'm skilled in version control (Git/GitHub) and accessibility standards (ARIA/WCAG). I have a passion for applying my knowledge to real-world projects and aim for a career in web/software development.</p>
-                </div>
-            </div>
+  <!-- About Section -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>4+ years<br />Academic & Practical</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. Computer Science, TU Dublin</p>
+          </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
-    </section>
+        <div class="text-container">
+          <p>I’m a third-year Computer Science student with a strong foundation in web and app development, software testing, and cybersecurity. I thrive on turning ideas into responsive, secure, and accessible digital solutions.</p>
+          <br/>
+          <p>My interests include full-stack development, cloud technologies, DevOps practices, and ethical hacking. I’ve completed intensive hands-on projects in web apps, AI, digital forensics, and secure software architecture.</p>
+          <br/>
+          <p>Through Udemy courses and self-learning, I’ve acquired certifications in cybersecurity, file automation, digital forensics, and web development. These experiences have strengthened my skills in version control, deployment pipelines, secure coding, and troubleshooting real-world systems.</p>
+          <br/>
+          <p>I’m constantly exploring new technologies, with a passion for building inclusive, scalable, and efficient digital solutions. I enjoy working on complex problems, contributing to collaborative projects, and continuously developing as a modern tech professional.</p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+  </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <p class="section__text__p1">My Skills and</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>HTML5</h3><p>Proficient</p></div></article>
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>CSS3</h3><p>Proficient</p></div></article>
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>JavaScript</h3><p>Proficient</p></div></article>
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Kotlin</h3><p>Proficient</p></div></article>
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>WordPress</h3><p>Proficient</p></div></article>
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Accessibility (ARIA, WCAG)</h3><p>Experienced</p></div></article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend & Tools</h2>
-                    <div class="article-container">
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Node.js</h3><p>Proficient</p></div></article>
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>PHP</h3><p>Proficient</p></div></article>
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Python</h3><p>Proficient</p></div></article>
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>C</h3><p>Proficient</p></div></article>
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Java</h3><p>Intermediate</p></div></article>
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>SQL / PostgreSQL</h3><p>Proficient</p></div></article>
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Git & GitHub</h3><p>Experienced</p></div></article>
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Docker & Kubernetes</h3><p>Intermediate</p></div></article>
-                        <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Bash & PowerShell</h3><p>Proficient</p></div></article>
-                    </div>
-                </div>
-            </div>
+  <!-- Experience Section -->
+  <section id="experience">
+    <p class="section__text__p1">My Skills and</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>HTML5</h3><p>Proficient</p></div></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>CSS3</h3><p>Proficient</p></div></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>JavaScript</h3><p>Proficient</p></div></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Kotlin</h3><p>Proficient</p></div></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>WordPress</h3><p>Proficient</p></div></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Accessibility (ARIA, WCAG)</h3><p>Experienced</p></div></article>
+          </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#certifications'" />
-    </section>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend & Tools</h2>
+          <div class="article-container">
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Node.js</h3><p>Proficient</p></div></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>PHP</h3><p>Proficient</p></div></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Python</h3><p>Proficient</p></div></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>C</h3><p>Proficient</p></div></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Java</h3><p>Intermediate</p></div></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>SQL / PostgreSQL</h3><p>Proficient</p></div></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Git & GitHub</h3><p>Experienced</p></div></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Docker & Kubernetes</h3><p>Intermediate</p></div></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Bash, CMD & PowerShell</h3><p>Proficient</p></div></article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#certifications'" />
+  </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <p class="section__text__p1">Verified Credentials</p>
-        <h1 class="title">Certifications</h1>
-        <div class="certs-container">
-            <div class="details-container">
-                <h3>The Web Developer Bootcamp 2024</h3>
-                <p>Comprehensive full-stack training including HTML, CSS, JavaScript, Node.js, Express, MongoDB, and REST APIs.</p>
-            </div>
-            <div class="details-container">
-                <h3>Advanced PowerShell Management</h3>
-                <p>File and folder automation, scripting fundamentals, command-line proficiency in cross-platform environments.</p>
-            </div>
-            <div class="details-container">
-                <h3>Mastering Cybersecurity Vulnerability Management</h3>
-                <p>Identification and management of system vulnerabilities, CVE analysis, and security hardening techniques.</p>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
-    </section>
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <p class="section__text__p1">Verified Credentials</p>
+    <h1 class="title">Certifications</h1>
+    <div class="certs-container">
+      <div class="details-container">
+        <h3>The Web Developer Bootcamp 2024</h3>
+        <p>Full-stack development including HTML, CSS, JavaScript, React, Node.js, MongoDB, REST APIs, and secure coding practices.</p>
+      </div>
+      <div class="details-container">
+        <h3>Advanced PowerShell Management</h3>
+        <p>Automated file/folder scripting, system management commands, and cross-platform CLI proficiency.</p>
+      </div>
+      <div class="details-container">
+        <h3>Mastering Cybersecurity Vulnerability Management</h3>
+        <p>Vulnerability assessments, patching, threat mitigation, monitoring strategies, and security reporting.</p>
+      </div>
+      <div class="details-container">
+        <h3>Computer Forensics and Digital Forensics Masterclass PRO+</h3>
+        <p>Evidence handling, cybercrime investigation, data recovery, forensic tools (EnCase, FTK), and mobile forensics.</p>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+  </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <h2>Country Search App</h2>
-                        <p>Real-time filtering and responsive frontend. Built with Node.js, Express, and MySQL.</p>
-                        <p><strong>Tech:</strong> Node.js, MySQL, JavaScript, HTML, CSS</p>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Country-Search-App-2024'">GitHub</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <h2>AI Neural Networks</h2>
-                        <p>MLPs for classification using Python on datasets like XOR, Iris, Seeds, Transport Modes.</p>
-                        <p><strong>Tech:</strong> Python, Pandas, NumPy, Jupyter</p>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Introduction-to-Artificial-Intelligence-CA-Assignment-2024-25'">GitHub</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <h2>Cyber Security Labs</h2>
-                        <p>Hands-on labs: firewalls, malware simulation, encryption, Hashcat, GnuPG on Kali Linux.</p>
-                        <p><strong>Tech:</strong> Python, Bash, Hashcat, iptables, GnuPG</p>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Cryptography-and-Cyber-Security-CA-Assignments-2024-25'">GitHub</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <h2>TunePal Testing</h2>
-                        <p>Testing of music app via unit tests, usability testing, personas, and SUS evaluation.</p>
-                        <p><strong>Tech:</strong> Python, pytest, unittest, UX Testing</p>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Software-Testing-CA-Assignments-2024-25'">GitHub</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/PaulinaCzarnota?tab=repositories')">View More Projects on GitHub</button>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
-    </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <p class="section__text__p1">Get In Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-details">
-            <p class="section__text__p1">Feel free to reach out to me via email or LinkedIn:</p>
-            <div class="contact-info-upper-container">
-                <div class="contact-info-container">
-                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                    <p><a href="mailto:paul.czar.14@gmail.com">paul.czar.14@gmail.com</a></p>
-                </div>
-                <div class="contact-info-container">
-                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                    <p><a href="https://www.linkedin.com/in/paulina-czarnota-computer-science/" target="_blank">LinkedIn</a></p>
-                </div>
-            </div>
+        <!-- iPlanit Redesign -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <h2>iPlanit Website Redesign</h2>
+            <p>Led a team project, in collaboration with SJOG co-designers, to redesign the "Action Plan" section of the iPlanit platform. We focused on user-centered design, accessibility, and inclusivity, using feedback from real users and accessibility audits.</p>
+            <p>Used React, Next.js, and modular CSS to create an interactive goals interface with dynamic states, progress tracking, and persistent local storage. Implemented accessibility best practices using semantic HTML and ARIA.</p>
+            <p><strong>Tech:</strong> React, Next.js, JavaScript, HTML5, CSS3, ARIA</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/team-project'">GitHub</button>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>© 2025 Paulina Czarnota. All Rights Reserved.</p>
-    </footer>
+        <!-- Country Search App -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <h2>Country Search App</h2>
+            <p>A real-time, case-insensitive search engine for country names with a user-friendly and mobile-responsive UI. Users can search by full or partial country names, with search results powered by a MySQL database and server-side filtering.</p>
+            <p>Includes a fully structured backend using Node.js with Express, and interactive JavaScript DOM logic for seamless user input handling. Supports future upgrades like fuzzy search and caching.</p>
+            <p><strong>Tech:</strong> Node.js, Express, MySQL, JavaScript, HTML5, CSS3</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Country-Search-App-2024'">GitHub</button>
+          </div>
+        </div>
 
-    <script src="script.js"></script>
+        <!-- AI Neural Network Classifier -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <h2>AI Neural Network Classifier</h2>
+            <p>Designed and trained Multilayer Perceptrons (MLPs) for classification tasks such as XOR logic gates, Iris species prediction, and transport mode classification. Explored the effect of tuning hyperparameters and training rates.</p>
+            <p>Integrated cross-entropy and MSE cost functions for performance benchmarking. Project documented in Jupyter Notebook with annotated visualizations.</p>
+            <p><strong>Tech:</strong> Python, NumPy, Pandas, Jupyter, Matplotlib</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Introduction-to-Artificial-Intelligence-CA-Assignment-2024-25'">GitHub</button>
+          </div>
+        </div>
+
+        <!-- Cybersecurity Labs -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <h2>Cryptography and Cybersecurity Labs</h2>
+            <p>Practical experience in encryption, password cracking, and network security using tools like Hashcat, Hydra, GnuPG, CeWL, and Wireshark. Simulated password attacks, RSA-based encrypted messaging, and digital forensics with real datasets.</p>
+            <p>Built secure communication pipelines and implemented brute-force testing, vulnerability scanning, and malware analysis using Kali Linux.</p>
+            <p><strong>Tech:</strong> Bash, Python, Hashcat, GnuPG, Hydra, Wireshark, Linux</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Cryptography-and-Cyber-Security-CA-Assignments-2024-25'">GitHub</button>
+          </div>
+        </div>
+
+        <!-- TunePal App Testing -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <h2>TunePal App Testing</h2>
+            <p>Led comprehensive software testing of a music library app across the full SDLC. Designed unit tests, user-focused usability tests, and evaluation strategies. Created personas, test cases, and ran evaluations using SUS, heuristic checks, and scenario walkthroughs.</p>
+            <p>Reported bugs, planned test strategies in Scrum cycles, and wrote functional and non-functional requirement validations.</p>
+            <p><strong>Tech:</strong> Python, pytest, UX personas, usability testing, Scrum</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Software-Testing-CA-Assignments-2024-25'">GitHub</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="btn-container">
+      <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/PaulinaCzarnota?tab=repositories')">View More Projects on GitHub</button>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-card">
+      <p class="contact-description">I’m open to collaboration, freelance projects, or professional opportunities. Feel free to reach out via email or connect with me on LinkedIn.</p>
+      <div class="contact-methods">
+        <div class="contact-method">
+          <img src="./assets/email.png" alt="Email" class="icon" />
+          <p><a href="mailto:paul.czar.14@gmail.com">paul.czar.14@gmail.com</a></p>
+        </div>
+        <div class="contact-method">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+          <p><a href="https://www.linkedin.com/in/paulina-czarnota-computer-science/" target="_blank">LinkedIn Profile</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Paulina Czarnota. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,17 +1,18 @@
-// Toggle the hamburger menu on mobile
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-
-  if (menu && icon) {
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-  }
-}
-
-// Scroll to top when clicking logo
-document.querySelectorAll(".logo").forEach(logo => {
-  logo.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+// Scroll arrow
+const arrows = document.querySelectorAll(".arrow");
+arrows.forEach((arrow) => {
+  arrow.addEventListener("click", () => {
+    const nextSection = arrow.closest("section").nextElementSibling;
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
   });
+});
+
+// Hamburger menu toggle
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
 });
