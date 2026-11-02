@@ -2,248 +2,364 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio - Paulina Czarnota</title>
+  <title>Paulina Czarnota | Software developer and tester in Dublin</title>
+  <meta name="description" content="Portfolio of Paulina Czarnota, a final-year Computer Science student at TU Dublin and Mobile Network Testing Intern at 1GLOBAL. Java, web and Android development, software testing, cloud and cybersecurity." />
+  <meta property="og:title" content="Paulina Czarnota | Software developer and tester in Dublin" />
+  <meta property="og:description" content="Final-year Computer Science student at TU Dublin. Projects in Java, web and Android development, testing, cloud and cybersecurity." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://paulinaczarnota.github.io/Portfolio-Website/assets/profile-picture.png" />
+  <meta name="theme-color" content="#F1F6F5" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Navigation -->
- <nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">Portfolio</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Paulina Czarnota</a>
+      <nav aria-label="Main">
+        <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+        <ul class="nav-links" id="siteNav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
     </div>
-  </div>
- </nav>
+  </header>
 
-  <!-- Profile -->
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/profile-picture.png" alt="Paulina Czarnota profile picture" />
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="availability" data-enter>Open to internships and graduate roles in Dublin</p>
+          <h1 data-enter><span>Paulina</span><span>Czarnota</span></h1>
+          <p class="hero-role" data-enter>Software developer and tester, final-year Computer Science student at TU Dublin.</p>
+          <p class="hero-lede" data-enter>I build Java, web and Android applications, and I test, secure and ship them. At 1GLOBAL I helped validate the launch of Lidl Connect Ireland on real iOS and Android devices.</p>
+          <div class="hero-actions" data-enter>
+            <a class="btn btn-primary" href="assets/CV_Paulina_Czarnota.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a class="btn btn-secondary" href="#projects">See projects</a>
+          </div>
+          <ul class="hero-social" data-enter aria-label="Profiles">
+            <li><a href="https://github.com/PaulinaCzarnota" target="_blank" rel="noopener" aria-label="GitHub profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/paulina-czarnota-computer-science" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+            <li><a href="mailto:paul.czar.14@gmail.com" aria-label="Email Paulina"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6.5L20.5 7"/></svg></a></li>
+          </ul>
+        </div>
+        <div class="portrait" data-enter>
+          <img src="assets/profile-picture.png" alt="Portrait of Paulina Czarnota" width="612" height="543" />
+        </div>
+      </div>
+      <div class="wrap">
+        <dl class="facts" data-enter>
+          <div><dt>Based in</dt><dd>Dublin, Ireland</dd></div>
+          <div><dt>Studying</dt><dd>BSc (Hons) Computer Science, TU Dublin</dd></div>
+          <div><dt>Graduating</dt><dd>October 2027</dd></div>
+          <div><dt>Latest role</dt><dd>Mobile Network Testing Intern, 1GLOBAL, 2026</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap section-grid">
+        <h2 class="section-title">About</h2>
+        <div class="prose">
+          <p class="lead">I'm a final-year Computer Science student at TU Dublin with a strong interest in web and app development, software testing and cybersecurity.</p>
+          <p>From May to November 2026 I worked as a Mobile Network Testing Intern at 1GLOBAL, a global MVNO and MVNE platform. I helped validate the launch of Lidl Connect Ireland: testing on real iOS and Android devices, checking provisioning APIs in Postman, tracing faults in Grafana and tracking defects in Jira.</p>
+          <p>At university I've built Java EE and Android applications, led a real-client accessibility project with St. John of God Community Services, and worked through cloud, DevOps, database and cybersecurity labs. I've added Udemy courses in cybersecurity vulnerability management, digital forensics, PowerShell and full stack web development.</p>
+          <p>I like work where reliability matters: clear requirements, careful testing, secure defaults and code that someone else can maintain.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="wrap section-grid">
+        <h2 class="section-title">Experience and education</h2>
+        <div>
+          <ol class="timeline">
+            <li class="tl-item">
+              <p class="tl-date">May 2026 to November 2026</p>
+              <div class="tl-body">
+                <h3>Mobile Network Testing Intern</h3>
+                <p class="tl-org">1GLOBAL, Pembroke House, Dublin 2</p>
+                <ul class="tl-list">
+                  <li>Contributed to the pre-launch validation of Lidl Connect Ireland, launched in October 2026, running functional, regression, exploratory, interoperability, B2B and UX tests on physical iOS and Android devices in an MVNO environment.</li>
+                  <li>Tested physical SIM and eSIM services: provisioning, activation, QR activation, eSIM swaps, APN configuration, network registration, roaming, port-in and port-out, and service continuity.</li>
+                  <li>Validated VoLTE, VoWiFi, 3G and CS voice, SMS, mobile data, voicemail, call forwarding, conference calling, emergency services, OTP, iMessage and FaceTime, caller ID, compliance announcements and network branding.</li>
+                  <li>Ran cross-operator tests across Lidl Connect, Monzo Mobile, Revolut Mobile, Tesco Mobile, Eir, Vodafone and Three, covering voice, SMS, data, roaming and interoperability, plus 4G and 5G coverage and real-world network testing.</li>
+                  <li>Tested provisioning APIs in Postman, including webhooks, CDRs, IP and data draining, plus Magnolia flows, validating JSON responses. Used Grafana to monitor network and provisioning activity and trace faults to their root cause.</li>
+                  <li>Configured devices, ran software updates and tested the Lidl staging app UI and UX on iOS and Android.</li>
+                  <li>Logged and retested defects in Jira with clear reproduction steps, documented results in Confluence and Excel, and worked with QA engineers, developers and network engineers in an Agile team.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="tl-item">
+              <p class="tl-date">2021 to October 2027 (expected)</p>
+              <div class="tl-body">
+                <h3>BSc (Hons) Computer Science (TU856)</h3>
+                <p class="tl-org">Technological University Dublin, Grangegorman</p>
+                <p class="tl-text"><strong>Final-year modules:</strong> Advanced Databases, Forensics, Advanced Security, Machine Learning for Data Analytics.</p>
+                <p class="tl-text"><strong>Earlier coursework:</strong> Algorithms and Data Structures, Software Engineering, Software Testing, Cloud Computing and DevOps, Cryptography and Cyber Security, Databases, Operating Systems, Data Communications, Web and Client Server Programming, Mobile Application Development, Artificial Intelligence, Universal Design and Assistive ICT.</p>
+              </div>
+            </li>
+          </ol>
+
+          <details class="earlier" open>
+            <summary>Earlier work and volunteering</summary>
+            <ul class="earlier-list"><li><div class="earlier-head"><h4>STEPS Engineering Your Future Programme</h4><p class="earlier-meta">ESB, Dublin 3, March 2019</p></div><p>Selected for a multi-disciplinary placement at ESB headquarters, working alongside electrical, mechanical, civil, chemical, biomedical and CAD engineers. I took part in hands-on lab work, helped with engineering calculations, contributed to team problem solving and saw how large infrastructure projects are planned and delivered.</p></li><li><div class="earlier-head"><h4>Childcare Worker</h4><p class="earlier-meta">Pitter Patter Community Crèche and Pre-School, Dublin 1, March 2019</p></div><p>Supervised children aged 1 to 5 in a safe, supportive setting and helped run the daily routine, including meals, rest periods and group activities. I led age appropriate educational and play sessions, solved problems calmly in a fast moving environment and worked closely with senior staff and colleagues.</p></li><li><div class="earlier-head"><h4>Retail Sales and Deli Assistant</h4><p class="earlier-meta">Eurospar, Dublin 11, November 2018</p></div><p>Combined retail sales with food service, preparing fresh deli food in a high volume store to HACCP food safety standards. I managed stock rotation and replenishment, set up promotional displays and dealt directly with customers.</p></li><li><div class="earlier-head"><h4>Step-In Experience Programme</h4><p class="earlier-meta">A&amp;L Goodbody LLP, Dublin 1, October 2018</p></div><p>Selected for a competitive programme at a leading Irish corporate law firm. I shadowed legal professionals across several departments, learned how the Irish legal system and corporate law work, and took part in workshops and case study simulations that built my analytical thinking, teamwork and communication.</p></li><li><div class="earlier-head"><h4>Volunteer</h4><p class="earlier-meta">Friends of the Elderly Ireland, Dublin 1, September 2018 to January 2019</p></div><p>Organised and led weekly social events and clubs for older adults, building communication and leadership skills.</p></li><li><div class="earlier-head"><h4>Fundraising Volunteer</h4><p class="earlier-meta">Oesophageal Cancer Fund, March 2019</p></div><p>Fundraising to raise money and awareness for an Irish health charity.</p></li></ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="wrap section-grid">
+        <h2 class="section-title">Skills</h2>
+        <dl class="skills"><div class="skill-row"><dt>Languages</dt><dd>Java, Python, C, Kotlin, JavaScript, PHP, SQL, PL/pgSQL, Bash, PowerShell, Prolog, ARM assembly</dd></div><div class="skill-row"><dt>Web and mobile</dt><dd>HTML, CSS, React, Next.js, Node.js, Express, REST APIs, Java EE (Servlets, JSP, JDBC), Android SDK, Jetpack Compose, WCAG 2.1 and ARIA accessibility, WordPress</dd></div><div class="skill-row"><dt>Testing and QA</dt><dd>Functional, regression and exploratory testing, API testing with Postman, unittest, pytest, JUnit, TDD, coverage, usability testing (Think Aloud, SUS), Jira, Confluence, Grafana</dd></div><div class="skill-row"><dt>Cloud and DevOps</dt><dd>Git and GitHub, GitHub Actions, Jenkins, Docker, Kubernetes, Vagrant, Google Cloud, Prometheus, Linux</dd></div><div class="skill-row"><dt>Data and AI</dt><dd>PostgreSQL, MySQL, MongoDB, Neo4j, Pandas, NumPy, Jupyter, neural networks</dd></div><div class="skill-row"><dt>Security</dt><dd>Secure coding, Kali Linux, Hydra, Hashcat, GnuPG, iptables, AES and RSA, vulnerability management, digital forensics</dd></div><div class="skill-row"><dt>Embedded systems</dt><dd>Embedded C and ARM assembly on an STM32 Nucleo (Cortex-M0+), GPIO, ADC, timers, serial communication and multi-threading</dd></div><div class="skill-row"><dt>Networking</dt><dd>TCP/IP, Wireshark, tcpdump, HTTP, 4G and 5G networks, SIM and eSIM provisioning</dd></div><div class="skill-row"><dt>Ways of working</dt><dd>UML, design patterns, Agile and Scrum, requirements gathering, technical documentation, team leadership</dd></div></dl>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrap section-grid">
+        <h2 class="section-title">Projects</h2>
+        <div>
+          <p class="section-note">University projects and labs, each with its code on GitHub. Filter by topic.</p>
+          <div class="chips" role="group" aria-label="Filter projects by topic"><button type="button" class="chip" data-filter="all" aria-pressed="true">All</button><button type="button" class="chip" data-filter="web" aria-pressed="false">Web</button><button type="button" class="chip" data-filter="java" aria-pressed="false">Java</button><button type="button" class="chip" data-filter="mobile" aria-pressed="false">Mobile</button><button type="button" class="chip" data-filter="testing" aria-pressed="false">Testing</button><button type="button" class="chip" data-filter="security" aria-pressed="false">Security</button><button type="button" class="chip" data-filter="cloud" aria-pressed="false">Cloud and DevOps</button><button type="button" class="chip" data-filter="data" aria-pressed="false">Data and AI</button><button type="button" class="chip" data-filter="accessibility" aria-pressed="false">Accessibility</button></div>
+          <p class="project-count" id="projectCount" aria-live="polite"></p>
+          <div class="projects" id="projectList">
+        <article class="project feature" data-tags="web accessibility">
+          <p class="project-ctx">Team Project, Year 3<br>Team lead</p>
+          <div class="project-main">
+            <h3>iPlanit accessible action plan redesign</h3>
+            <p class="project-desc">Led a student co-design team with St. John of God Community Services to redesign the action plan page of the iPlanit web system for people with intellectual disabilities. I ran stakeholder meetings and co-design workshops, gathered requirements, wrote the project charter, risk plan, design document, test plan and user manual, presented at all four milestones, contributed to the React implementation and ran end user testing.</p>
+            <p class="project-tech">React, JavaScript, HTML, CSS, WCAG 2.1, ARIA</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/team-project" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for iPlanit accessible action plan redesign on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project feature" data-tags="java web">
+          <p class="project-ctx">Software Engineering 3, Year 3</p>
+          <div class="project-main">
+            <h3>Task management web application</h3>
+            <p class="project-desc">A Java EE web application with full create, read, update, delete and mark complete for tasks. A Task model, a controller servlet, a DAO layer and a JDBC utility class keep the MVC layers separate. Delivered with requirements, a class diagram, four sequence diagrams and a presentation.</p>
+            <p class="project-tech">Java EE, Servlets, JSP, JDBC, MySQL, MVC</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Software-Engineering-3-CA-Assignment-2024-25" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for Task management web application on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project feature" data-tags="mobile security">
+          <p class="project-ctx">Mobile Application Development, 2025</p>
+          <div class="project-main">
+            <h3>Android fitness tracker</h3>
+            <p class="project-desc">An Android app with biometric login, workout and nutrition tracking, step counting, goals, progress charts and reminders. Built with MVVM and a repository pattern, Room for storage, WorkManager for background jobs, and credentials secured with Android Keystore and PBKDF2 hashing.</p>
+            <p class="project-tech">Kotlin, Jetpack Compose, MVVM, Room, WorkManager</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Fitness-Tracker-App-2025" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for Android fitness tracker on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project feature" data-tags="testing">
+          <p class="project-ctx">Software Testing, Year 3</p>
+          <div class="project-main">
+            <h3>Software testing and usability testing</h3>
+            <p class="project-desc">A unit test suite for the TunePal music library API covering duplicate handling, pagination, search, filtering, invalid input and a 200ms performance target, with coverage and pylint reports. Followed by a formal usability study of the TunePal app with personas, consent forms, moderator scripts, Think Aloud sessions and SUS scoring. The lab repository adds TDD, black box and white box testing and debugging.</p>
+            <p class="project-tech">Python, pytest, unittest, coverage, pylint, Scrum</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Software-Testing-CA-Assignments-2024-25" target="_blank" rel="noopener">Assignments<span class="visually-hidden"> for Software testing and usability testing on GitHub</span></a><a href="https://github.com/PaulinaCzarnota/Software-Testing-Labs-2024-25" target="_blank" rel="noopener">Labs<span class="visually-hidden"> for Software testing and usability testing on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="security">
+          <p class="project-ctx">Cryptography and Cyber Security, Year 3</p>
+          <div class="project-main">
+            <h3>Cryptography and cyber security labs</h3>
+            <p class="project-desc">Configured iptables firewall rules on Kali Linux, tested password strength with Hydra, Hashcat and CeWL, signed and encrypted files with GnuPG, built an RSA scheme for confidential and authenticated messages, broke a substitution cipher with frequency analysis and compared AES ECB and CBC on an image.</p>
+            <p class="project-tech">Kali Linux, Python, Bash, GnuPG, iptables</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Cryptography-and-Cyber-Security-CA-Assignments-2024-25" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for Cryptography and cyber security labs on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="cloud">
+          <p class="project-ctx">Cloud Computing, Year 3</p>
+          <div class="project-main">
+            <h3>Cloud computing labs</h3>
+            <p class="project-desc">Nine labs on Google Cloud and virtualisation: VPC networks and firewall rules, load balancers, managed instance groups, API Gateway with API keys, Pub/Sub, Cloud Run functions, IAM custom roles with least privilege, Firestore migration, a Firebase web app, plus FreeNAS with RAID in VirtualBox.</p>
+            <p class="project-tech">Google Cloud, Docker, IAM, Firebase, VirtualBox</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Cloud-Computing-Labs-2024-25" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for Cloud computing labs on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="cloud testing">
+          <p class="project-ctx">Introduction to DevOps, Year 3</p>
+          <div class="project-main">
+            <h3>DevOps pipelines and monitoring</h3>
+            <p class="project-desc">A Jenkins pipeline that builds Git from source every ten minutes, a GitHub Actions workflow that runs unit tests on every push, a Flask app containerised with Docker and deployed on Kubernetes with Minikube, and a Prometheus and Grafana monitoring stack for Windows CPU and network metrics.</p>
+            <p class="project-tech">Jenkins, GitHub Actions, Docker, Kubernetes, Vagrant, Prometheus, Grafana</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/devops-lab-4" target="_blank" rel="noopener">Jenkins<span class="visually-hidden"> for DevOps pipelines and monitoring on GitHub</span></a><a href="https://github.com/PaulinaCzarnota/devops-lab-6" target="_blank" rel="noopener">Docker<span class="visually-hidden"> for DevOps pipelines and monitoring on GitHub</span></a><a href="https://github.com/PaulinaCzarnota/devops-lab-7" target="_blank" rel="noopener">Kubernetes<span class="visually-hidden"> for DevOps pipelines and monitoring on GitHub</span></a><a href="https://github.com/PaulinaCzarnota/devops-lab-8" target="_blank" rel="noopener">Monitoring<span class="visually-hidden"> for DevOps pipelines and monitoring on GitHub</span></a><a href="https://github.com/PaulinaCzarnota/devops-lab-9" target="_blank" rel="noopener">CI tests<span class="visually-hidden"> for DevOps pipelines and monitoring on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="data">
+          <p class="project-ctx">Databases 2, Year 3</p>
+          <div class="project-main">
+            <h3>Databases and SQL</h3>
+            <p class="project-desc">Relational design and normalisation to 3NF, window functions on athletics and stock data, triggers for league tables and medical records, B-tree indexing, a Python and PostgreSQL pipeline using an external API, plus MongoDB aggregation and a Neo4j social graph.</p>
+            <p class="project-tech">PostgreSQL, MongoDB, Neo4j, Python, DBeaver</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Databases-2-Labs-2024-25" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for Databases and SQL on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="data">
+          <p class="project-ctx">Introduction to AI, Year 3</p>
+          <div class="project-main">
+            <h3>Multilayer perceptron classifiers</h3>
+            <p class="project-desc">Multilayer perceptrons written from first principles, with feedforward propagation, backpropagation and gradient descent, trained on XOR, Iris, transport mode and seeds data. Compared mean squared error and cross entropy loss and tuned learning rates and hidden layers.</p>
+            <p class="project-tech">Python, NumPy, Pandas, Jupyter</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Introduction-to-Artificial-Intelligence-CA-Assignment-2024-25" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for Multilayer perceptron classifiers on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="java">
+          <p class="project-ctx">Algorithms and Data Structures, Year 2</p>
+          <div class="project-main">
+            <h3>Graph algorithms and data structures</h3>
+            <p class="project-desc">Prim's and Kruskal's minimum spanning trees, Dijkstra's shortest path tree, and recursive depth first and queue based breadth first traversals, implemented in Java with a written report on design and complexity.</p>
+            <p class="project-tech">Java</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Algorithms-and-Data-Structures-CA-Assignment-2022-23" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for Graph algorithms and data structures on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="web">
+          <p class="project-ctx">Personal project, 2024</p>
+          <div class="project-main">
+            <h3>Country search app</h3>
+            <p class="project-desc">A responsive search app with real time, case insensitive, partial and full matching on country names, backed by an Express server and a MySQL database.</p>
+            <p class="project-tech">Node.js, Express, MySQL, JavaScript, HTML, CSS</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Country-Search-App-2024" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for Country search app on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="web">
+          <p class="project-ctx">Web Development 2, Year 2</p>
+          <div class="project-main">
+            <h3>Library reservation website</h3>
+            <p class="project-desc">A PHP and MySQL site with registration and login with validation, sessions, search by title, author and genre, and book reservations.</p>
+            <p class="project-tech">PHP, MySQL, HTML, CSS</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Web-Development-2-CA-Project-2022-23" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for Library reservation website on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="web accessibility">
+          <p class="project-ctx">Universal Design and Assistive ICT, Year 3</p>
+          <div class="project-main">
+            <h3>Accessibility audits</h3>
+            <p class="project-desc">An audit of Google Maps against the seven principles of Universal Design with an improved design, and a WCAG 2.1 evaluation of two university websites using keyboard only testing, the NVDA screen reader, WAVE, TAW, AChecker and Lighthouse, with remediation plans.</p>
+            <p class="project-tech">WCAG 2.1, ARIA, NVDA, Lighthouse</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Universal-Design-and-Assistive-ICT-CA-Assignments-2024-25" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for Accessibility audits on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="security">
+          <p class="project-ctx">Client Server Programming, Year 3</p>
+          <div class="project-main">
+            <h3>Client server programming in C</h3>
+            <p class="project-desc">TCP client and server programs with Berkeley sockets, a basic and a file serving HTTP server in C that returns 200 and 404 responses, hostname resolution, and traffic analysis with Wireshark, tcpdump and netstat.</p>
+            <p class="project-tech">C, Linux, Wireshark, tcpdump</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Client-Server-Programming-Labs-2024-25" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for Client server programming in C on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="web accessibility">
+          <p class="project-ctx">Human Computer Interaction, Year 2</p>
+          <div class="project-main">
+            <h3>Daily Mail website redesign</h3>
+            <p class="project-desc">A usability case study and redesign of the Daily Mail website. User and desk research, personas, empathy maps, task descriptions and a comparison with similar apps, followed by a problem statement, a paper prototype and an evaluation plan. Graded 70% for the team presentation and 84% for the individual report.</p>
+            <p class="project-tech">User research, personas, paper prototyping, usability evaluation</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Human-Computer-Interaction-CA1-Presentation-2022-23" target="_blank" rel="noopener">Presentation<span class="visually-hidden"> for Daily Mail website redesign on GitHub</span></a><a href="https://github.com/PaulinaCzarnota/Human-Computer-Interaction-CA2-Report-2022-23" target="_blank" rel="noopener">Report<span class="visually-hidden"> for Daily Mail website redesign on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="data">
+          <p class="project-ctx">Introduction to AI, Year 3</p>
+          <div class="project-main">
+            <h3>AI labs: Prolog and neural networks</h3>
+            <p class="project-desc">Nine labs covering Prolog knowledge bases, recursion, an expert system and a semantic network, then NumPy, a perceptron, a sigmoid perceptron and a neural network with one hidden layer trained with backpropagation.</p>
+            <p class="project-tech">Prolog, Python, NumPy</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Introduction-to-Artificial-Intelligence-Labs-2024-25" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for AI labs: Prolog and neural networks on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="java">
+          <p class="project-ctx">Software Engineering 1 and 3</p>
+          <div class="project-main">
+            <h3>UML modelling</h3>
+            <p class="project-desc">A UML model of a library system in StarUML with use case, class, activity and sequence diagrams (84%), and a class diagram with three sequence diagrams for a web music player in IBM Rational Software Architect Designer.</p>
+            <p class="project-tech">UML, StarUML, IBM Rational Software Architect Designer</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Software-Engineering-1-CA-Assignment-2022-23" target="_blank" rel="noopener">Library system<span class="visually-hidden"> for UML modelling on GitHub</span></a><a href="https://github.com/PaulinaCzarnota/Software-Engineering-3-CA1-Assignment-2024-25" target="_blank" rel="noopener">Music player<span class="visually-hidden"> for UML modelling on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="data">
+          <p class="project-ctx">Object Oriented Programming, Year 2</p>
+          <div class="project-main">
+            <h3>School management system</h3>
+            <p class="project-desc">A Python application built with object oriented design. It manages student records across Maths, History and English, computes grades, saves data to files and produces summary reports.</p>
+            <p class="project-tech">Python, OOP, file handling</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Object-Oriented-Programming-In-Python-Project-2023" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for School management system on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="security">
+          <p class="project-ctx">Years 1 and 2</p>
+          <div class="project-main">
+            <h3>C programming and operating systems</h3>
+            <p class="project-desc">A modular menu driven Lotto game with sorting and frequency tracking (98%), a sorting and searching system for pharmaceutical production lines (98%), and an operating systems assignment with a Bash script, first fit and best fit memory allocation and scheduling algorithms (98%).</p>
+            <p class="project-tech">C, Bash, Linux, algorithms</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/C-Programming-CA-Assignments-2021-22" target="_blank" rel="noopener">C games<span class="visually-hidden"> for C programming and operating systems on GitHub</span></a><a href="https://github.com/PaulinaCzarnota/Algorithm-Design-Problem-Solving-CA-Assignment-2021-22" target="_blank" rel="noopener">Algorithm design<span class="visually-hidden"> for C programming and operating systems on GitHub</span></a><a href="https://github.com/PaulinaCzarnota/Operating-Systems-1-CA-Assignment-2021-22" target="_blank" rel="noopener">Operating systems<span class="visually-hidden"> for C programming and operating systems on GitHub</span></a></p>
+          </div>
+        </article>
+        <article class="project" data-tags="web">
+          <p class="project-ctx">Udemy, 2024</p>
+          <div class="project-main">
+            <h3>Web Developer Bootcamp projects</h3>
+            <p class="project-desc">Projects from the full stack Web Developer Bootcamp, completed in October 2024. They cover HTML, CSS, JavaScript, React, Node.js, MongoDB, authentication, REST APIs and cloud deployment.</p>
+            <p class="project-tech">JavaScript, React, Node.js, MongoDB, Bootstrap</p>
+            <p class="project-links"><a href="https://github.com/PaulinaCzarnota/Web-Developer-Bootcamp-2024-Projects" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> for Web Developer Bootcamp projects on GitHub</span></a></p>
+          </div>
+        </article>
+          </div>
+          <p class="more-link"><a href="https://github.com/PaulinaCzarnota/?tab=repositories" target="_blank" rel="noopener">Browse every repository on GitHub</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="wrap section-grid">
+        <h2 class="section-title">Certifications</h2>
+        <ul class="certs"><li class="cert"><div><h3>The Web Developer Bootcamp 2024</h3><p class="cert-meta">Udemy, July to October 2024</p></div><p>Full stack web development with HTML, CSS, JavaScript, React, Node.js, MongoDB, REST APIs, authentication and secure coding practices.</p></li><li class="cert"><div><h3>The AI Engineer Course 2025: Complete AI Engineer Bootcamp</h3><p class="cert-meta">Udemy</p></div><p>Applied AI and machine learning.</p></li><li class="cert"><div><h3>Cybersecurity Vulnerability Management</h3><p class="cert-meta">Udemy</p></div><p>Vulnerability assessment, patching, threat mitigation, monitoring and security reporting.</p></li><li class="cert"><div><h3>Computer Forensics and Digital Forensics Masterclass PRO+</h3><p class="cert-meta">Udemy</p></div><p>Evidence handling, cybercrime investigation, data recovery, forensic tools and mobile forensics.</p></li><li class="cert"><div><h3>PowerShell File and Folder Management</h3><p class="cert-meta">Udemy</p></div><p>Automated file and folder scripting and system management commands.</p></li><li class="cert"><div><h3>Certificate for Participation in Co-Design Team Projects</h3><p class="cert-meta">TU Dublin, 2024 to 2025</p></div><p>Signed by the Head of School of Computer Science.</p></li></ul>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="wrap section-grid">
+        <h2 class="section-title">Contact</h2>
+        <div>
+          <p class="contact-lead">Email is the quickest way to reach me. I'm looking for internships and graduate roles in Dublin, and I graduate in October 2027.</p>
+          <a class="contact-mail" href="mailto:paul.czar.14@gmail.com">paul.czar.14@gmail.com</a>
+          <ul class="contact-links">
+            <li><a href="https://www.linkedin.com/in/paulina-czarnota-computer-science" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/PaulinaCzarnota" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="assets/CV_Paulina_Czarnota.pdf" target="_blank" rel="noopener">Download CV</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Paulina Czarnota</p>
+      <a href="#top">Back to top</a>
     </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Paulina Czarnota</h1>
-      <p class="section__text__p2">Aspiring Web & App Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/CV_Paulina_Czarnota.pdf')">Download CV</button>
-        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/PaulinaCzarnota'" />
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>4+ years<br />Academic & Practical</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p>B.Sc. Computer Science, TU Dublin</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>I’m a third-year Computer Science student with a strong foundation in web and app development, software testing, and cybersecurity. I thrive on turning ideas into responsive, secure, and accessible digital solutions.</p>
-          <br/>
-          <p>My interests include full-stack development, cloud technologies, DevOps practices, and ethical hacking. I’ve completed intensive hands-on projects in web apps, AI, digital forensics, and secure software architecture.</p>
-          <br/>
-          <p>Through Udemy courses and self-learning, I’ve acquired certifications in cybersecurity, file automation, digital forensics, and web development. These experiences have strengthened my skills in version control, deployment pipelines, secure coding, and troubleshooting real-world systems.</p>
-          <br/>
-          <p>I’m constantly exploring new technologies, with a passion for building inclusive, scalable, and efficient digital solutions. I enjoy working on complex problems, contributing to collaborative projects, and continuously developing as a modern tech professional.</p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience">
-    <p class="section__text__p1">My Skills and</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>HTML5</h3><p>Proficient</p></div></article>
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>CSS3</h3><p>Proficient</p></div></article>
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>JavaScript</h3><p>Proficient</p></div></article>
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Kotlin</h3><p>Proficient</p></div></article>
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>WordPress</h3><p>Proficient</p></div></article>
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Accessibility (ARIA, WCAG)</h3><p>Experienced</p></div></article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Backend & Tools</h2>
-          <div class="article-container">
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Node.js</h3><p>Proficient</p></div></article>
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>PHP</h3><p>Proficient</p></div></article>
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Python</h3><p>Proficient</p></div></article>
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>C</h3><p>Proficient</p></div></article>
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Java</h3><p>Intermediate</p></div></article>
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>SQL / PostgreSQL</h3><p>Proficient</p></div></article>
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Git & GitHub</h3><p>Experienced</p></div></article>
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Docker & Kubernetes</h3><p>Intermediate</p></div></article>
-            <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Bash, CMD & PowerShell</h3><p>Proficient</p></div></article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#certifications'" />
-  </section>
-
-  <!-- Certifications Section -->
-  <section id="certifications">
-    <p class="section__text__p1">Verified Credentials</p>
-    <h1 class="title">Certifications</h1>
-    <div class="certs-container">
-      <div class="details-container">
-        <h3>The Web Developer Bootcamp 2024</h3>
-        <p>Full-stack development including HTML, CSS, JavaScript, React, Node.js, MongoDB, REST APIs, and secure coding practices.</p>
-      </div>
-      <div class="details-container">
-        <h3>Advanced PowerShell Management</h3>
-        <p>Automated file/folder scripting, system management commands, and cross-platform CLI proficiency.</p>
-      </div>
-      <div class="details-container">
-        <h3>Mastering Cybersecurity Vulnerability Management</h3>
-        <p>Vulnerability assessments, patching, threat mitigation, monitoring strategies, and security reporting.</p>
-      </div>
-      <div class="details-container">
-        <h3>Computer Forensics and Digital Forensics Masterclass PRO+</h3>
-        <p>Evidence handling, cybercrime investigation, data recovery, forensic tools (EnCase, FTK), and mobile forensics.</p>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
-  </section>
-
-    <!-- Projects Section -->
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-
-        <!-- iPlanit Redesign -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <h2>iPlanit Website Redesign</h2>
-            <p>Led a team project, in collaboration with SJOG co-designers, to redesign the "Action Plan" section of the iPlanit platform. We focused on user-centered design, accessibility, and inclusivity, using feedback from real users and accessibility audits.</p>
-            <p>Used React, Next.js, and modular CSS to create an interactive goals interface with dynamic states, progress tracking, and persistent local storage. Implemented accessibility best practices using semantic HTML and ARIA.</p>
-            <p><strong>Tech:</strong> React, Next.js, JavaScript, HTML5, CSS3, ARIA</p>
-          </div>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/team-project'">GitHub</button>
-          </div>
-        </div>
-
-        <!-- Country Search App -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <h2>Country Search App</h2>
-            <p>A real-time, case-insensitive search engine for country names with a user-friendly and mobile-responsive UI. Users can search by full or partial country names, with search results powered by a MySQL database and server-side filtering.</p>
-            <p>Includes a fully structured backend using Node.js with Express, and interactive JavaScript DOM logic for seamless user input handling. Supports future upgrades like fuzzy search and caching.</p>
-            <p><strong>Tech:</strong> Node.js, Express, MySQL, JavaScript, HTML5, CSS3</p>
-          </div>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Country-Search-App-2024'">GitHub</button>
-          </div>
-        </div>
-
-        <!-- AI Neural Network Classifier -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <h2>AI Neural Network Classifier</h2>
-            <p>Designed and trained Multilayer Perceptrons (MLPs) for classification tasks such as XOR logic gates, Iris species prediction, and transport mode classification. Explored the effect of tuning hyperparameters and training rates.</p>
-            <p>Integrated cross-entropy and MSE cost functions for performance benchmarking. Project documented in Jupyter Notebook with annotated visualizations.</p>
-            <p><strong>Tech:</strong> Python, NumPy, Pandas, Jupyter, Matplotlib</p>
-          </div>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Introduction-to-Artificial-Intelligence-CA-Assignment-2024-25'">GitHub</button>
-          </div>
-        </div>
-
-        <!-- Cybersecurity Labs -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <h2>Cryptography and Cybersecurity Labs</h2>
-            <p>Practical experience in encryption, password cracking, and network security using tools like Hashcat, Hydra, GnuPG, CeWL, and Wireshark. Simulated password attacks, RSA-based encrypted messaging, and digital forensics with real datasets.</p>
-            <p>Built secure communication pipelines and implemented brute-force testing, vulnerability scanning, and malware analysis using Kali Linux.</p>
-            <p><strong>Tech:</strong> Bash, Python, Hashcat, GnuPG, Hydra, Wireshark, Linux</p>
-          </div>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Cryptography-and-Cyber-Security-CA-Assignments-2024-25'">GitHub</button>
-          </div>
-        </div>
-
-        <!-- TunePal App Testing -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <h2>TunePal App Testing</h2>
-            <p>Led comprehensive software testing of a music library app across the full SDLC. Designed unit tests, user-focused usability tests, and evaluation strategies. Created personas, test cases, and ran evaluations using SUS, heuristic checks, and scenario walkthroughs.</p>
-            <p>Reported bugs, planned test strategies in Scrum cycles, and wrote functional and non-functional requirement validations.</p>
-            <p><strong>Tech:</strong> Python, pytest, UX personas, usability testing, Scrum</p>
-          </div>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PaulinaCzarnota/Software-Testing-CA-Assignments-2024-25'">GitHub</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="btn-container">
-      <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/PaulinaCzarnota?tab=repositories')">View More Projects on GitHub</button>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <p class="section__text__p1">Get In Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-card">
-      <p class="contact-description">I’m open to collaboration, freelance projects, or professional opportunities. Feel free to reach out via email or connect with me on LinkedIn.</p>
-      <div class="contact-methods">
-        <div class="contact-method">
-          <img src="./assets/email.png" alt="Email" class="icon" />
-          <p><a href="mailto:paul.czar.14@gmail.com">paul.czar.14@gmail.com</a></p>
-        </div>
-        <div class="contact-method">
-          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
-          <p><a href="https://www.linkedin.com/in/paulina-czarnota-computer-science/" target="_blank">LinkedIn Profile</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Paulina Czarnota. All Rights Reserved.</p>
   </footer>
 
   <script src="script.js"></script>
